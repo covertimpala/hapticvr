@@ -39,9 +39,11 @@ while True:
         #if uart.in_waiting:
          #   f = uart.readline().decode("utf-8")
           #  print(f)
+            s = time.time()
             a_x, a_y, a_z = sensor.acceleration
             g_x, g_y, g_z = sensor.gyro
             m_x, m_y, m_z = magnetometer.magnetic
+            s_2 = time.time()
             a_x = round(a_x,2)
             a_y = round(a_y,2)
             a_z = round(a_z,2)
